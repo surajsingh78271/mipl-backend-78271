@@ -1,4 +1,5 @@
-import mongoose from "mongoose";
+// import mongoose from "mongoose";
+const mongoose = require('mongoose')
 
 const dbConnection = async (DATABASE_URL)=>{
        
@@ -20,4 +21,5 @@ const dbConnection = async (DATABASE_URL)=>{
  
 }
 
-export default dbConnection
+// export default dbConnection
+module.exports = dbConnection

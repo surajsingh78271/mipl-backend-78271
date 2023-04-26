@@ -1,4 +1,5 @@
-import getModel from "../db/schema/model.js"
+// import getModel from "../db/schema/model.js"
+const getModel = require('../db/schema/model.js')
 
 
 const carController = async (req,res) => {
@@ -17,4 +18,5 @@ const carController = async (req,res) => {
     // console.log(value)
     res.status(200).send(value)
 }
-export default carController
+// export default carController
+module.exports = carController

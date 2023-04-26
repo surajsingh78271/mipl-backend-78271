@@ -1,4 +1,5 @@
-import getModel from "../db/schema/model.js"
+// import getModel from "../db/schema/model.js"
+const getModel = require('../db/schema/model.js')
 const incomeController = async (req,res) => {
 
     const data = await getModel.find()
@@ -16,4 +17,5 @@ const incomeController = async (req,res) => {
   
 }
 
-export default incomeController
+// export default incomeController
+module.exports = incomeController

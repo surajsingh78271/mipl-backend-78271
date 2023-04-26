@@ -1,4 +1,5 @@
-import getModel from "../db/schema/model.js"
+// import getModel from "../db/schema/model.js"
+const getModel = require('../db/schema/model.js')
 
 const citiController = async (req,res) => {
     const data = await getModel.find().sort("-income")
@@ -13,4 +14,5 @@ const citiController = async (req,res) => {
   
 }
 
-export default citiController
+// export default citiController
+module.exports = citiController

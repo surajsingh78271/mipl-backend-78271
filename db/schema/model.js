@@ -1,4 +1,5 @@
-import mongoose from "mongoose";
+// import mongoose from "mongoose";
+const mongoose = require('mongoose')
 
 const schemaData = new mongoose.Schema({
     id:Number,
@@ -21,4 +22,5 @@ const getModel = mongoose.model("sample_data",schemaData);
 
 
 
-export default getModel
+// export default getModel
+module.exports = getModel

@@ -9,7 +9,6 @@
   },
   "author": "suraj singh",
   "license": "ISC",
-  "type": "module",
   "devDependencies": {
     "nodemon": "^2.0.22"
   },

@@ -1,4 +1,5 @@
-import getModel from "../db/schema/model.js"
+// import getModel from "../db/schema/model.js"
+const getModel = require('../db/schema/model.js')
 
 
  const HomeController = async (req,res) => {
@@ -17,4 +18,5 @@ import getModel from "../db/schema/model.js"
     res.status(200).send(data)
   
 }
-export default HomeController
+// export default HomeController
+module.exports = HomeController
